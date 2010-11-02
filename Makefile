@@ -13,3 +13,6 @@ $(TMP)/mt.yy.cpp: mt.lex $(TMP)
 
 $(TMP):
 	mkdir $(TMP)
+
+clean:
+	rm -rf $(TMP) mt2csv
