@@ -1,11 +1,5 @@
-Yet another MT2CSV implementation, because it is FAST
-and RELIABLE to compile at different systems.
-
-mt0 files are HSPICE simulation measurement result.
-Although it is plain text,
-it's not really straight forward to process using excel or
-any other custom programs.
-This program will convert mt0 files to csv (comma separated file) files.
+Python implementation of mt2csv, since it is simpler than
+coding them in C.
 
 usage:
 ./mt2csv < s38584.mt0 > s38584.csv
