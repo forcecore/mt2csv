@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 import sys
+import operator
 
 class Mt2csv :
 	data = {}  # holds parsed data
@@ -36,7 +37,7 @@ class Mt2csv :
 			else : # VALUE mode
 				head = self.headers[ i ]
 				arr = self.data[ head ]
-				arr.append( tok )
+				arr.append( float( tok ) )
 				i = (i+1) % header_len
 				# print( head, tok )
 
@@ -47,6 +48,33 @@ class Mt2csv :
 
 		tokens = self.read_tokens( f )
 		self.parse_tokens( tokens )
+
+	# func should be one of "max" or "min".
+	def get_minmax( self, func, prefix ) :
+		ns = []
+		vals = []
+
+		for (n, val) in self.data.items() :
+			if n.startswith( prefix ) :
+				vals.extend( val )
+				ns.append( n )
+
+		# by default, max is picked.
+		if func == "min" :
+			index, value = min( enumerate( vals ), key=operator.itemgetter(1) )
+		else :
+			index, value = max( enumerate( vals ), key=operator.itemgetter(1) )
+
+		return ( ns[ index ], value )
+	
+	def get_avg( self, prefix ) :
+		vals = []
+
+		for (n, val) in self.data.items() :
+			if n.startswith( prefix ) :
+				vals.extend( val )
+
+		return sum( vals ) / len( vals )
 	
 	def emit( self ) :
 		print( self.simulator )
