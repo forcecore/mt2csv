@@ -99,7 +99,7 @@ class Mt2csv :
 			row = []
 			for h in self.headers :
 				arr = self.data[ h ]
-				row.append( arr[ i ] )
+				row.append( str( arr[ i ] ) )
 			print( ",".join( row ) )
 
 

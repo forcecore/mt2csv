@@ -2,6 +2,4 @@ Python implementation of mt2csv, since it is simpler than
 coding them in C.
 
 usage:
-./mt2csv < s38584.mt0 > s38584.csv
-or equivalently,
-cat s38584.mt0 | ./mt2csv > s38584.csv
+./mt2csv s38584.mt0 > s38584.csv
