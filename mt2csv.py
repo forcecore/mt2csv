@@ -4,11 +4,12 @@ import sys
 import operator
 
 class Mt2csv :
-	data = {}  # holds parsed data
-		# data{ data_name } = array of values
-	headers = [] # collect headers in order because dict has its own ordering.
-	simulator = ""
-	title = ""
+	def __init__( self ) :
+		self.data = {}  # holds parsed data
+			# data{ data_name } = array of values
+		self.headers = [] # collect headers in order because dict has its own ordering.
+		self.simulator = ""
+		self.title = ""
 
 	def read_tokens( self, f ) :
 		result = []
