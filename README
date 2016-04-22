@@ -1,5 +1,10 @@
 A "library" to read HSPICE measurements (.mt0, mt1, ..., mtX) and optionally, convert to CSV.
 
+... This was implemented when I didn't know about
+.option measform=3
+option, which makes HSPICE save the ouptut in CSV format in the first place!
+Still, perhaps someone might find this useful.
+
 Python implementation of mt2csv, since it is simpler than coding them in C.
 
 usage:
