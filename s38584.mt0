@@ -1,0 +1,22 @@
+$DATA1 SOURCE='HSPICE' VERSION='C-2009.03 32-BIT'
+.TITLE ' s38584.spef'
+ tdru138:z        tdru137:z        tdru136:z        tdru135:z         
+ tdru134:z        tdru133:z        tdru132:z        tdru131:z         
+ tdru130:z        tdru129:z        tdru128:z        tdru127:z         
+ tdru126:z        tdru125:z        tdru125:a        tdru124:z         
+ tdru122:z        tdru121:z        tdru120:z        tdru119:z         
+ tdru118:z        tdru117:z        tdru116:z        tdru115:z         
+ tdru114:z        tdru113:z        tdru112:z        tdru111:z         
+ tdru110:z        tdru109:z        tdru108:z        tdru107:z         
+ tdru106:z        tdru139:z        tdru139:a        temper            
+ alter#            
+  2.231e-10        2.249e-10        2.274e-10        2.249e-10        
+  2.267e-10        2.267e-10        2.255e-10        2.241e-10        
+  2.235e-10        2.283e-10        2.239e-10        2.253e-10        
+  2.263e-10        2.265e-10        1.090e-10        2.278e-10        
+  2.273e-10        2.317e-10        2.303e-10        2.297e-10        
+  2.274e-10        2.265e-10        2.279e-10        2.283e-10        
+  2.262e-10        2.312e-10        2.266e-10        2.250e-10        
+  2.290e-10        2.235e-10        2.314e-10        2.322e-10        
+  2.283e-10        1.075e-10        4.098e-13         25.0000         
+    1.0000         
