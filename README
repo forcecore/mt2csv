@@ -1,5 +1,6 @@
-Python implementation of mt2csv, since it is simpler than
-coding them in C.
+A "library" to read HSPICE measurements (.mt0, mt1, ..., mtX) and optionally, convert to CSV.
+
+Python implementation of mt2csv, since it is simpler than coding them in C.
 
 usage:
 ./mt2csv.py s38584.mt0 > s38584.csv
