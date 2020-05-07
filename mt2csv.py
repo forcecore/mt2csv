@@ -72,5 +72,7 @@ if __name__ == "__main__":
     ofname = sys.argv[2]
     mt2csv = Mt2csv()
     mt2csv.read(fname)
+    # You may do anything with mt2csv.df after reading.
+    # Here, we just save as csv and quit.
     mt2csv.to_csv(ofname)
     print("Wrote", ofname)
